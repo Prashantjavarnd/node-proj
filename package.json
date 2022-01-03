@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-mongoose-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Prashant",
+    "email": "prashantlokhandejavarndcorp@gmail.com",
+    "url": "http://www.js-tutorials.com/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.14.1",
+    "express": "~4.13.2",
+    "method-override": "~2.3.5",
+    "mongoose": "^5.13.14"
+  }
+}
