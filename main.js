@@ -83,3 +83,18 @@ app.put("/api/students/:student_id", function (req, res) {
     res.send("Successfully! Student updated - " + student.name);
   });
 });
+
+
+app.delete("/api/Students/:student_id", function (req, res) {
+  console.log(req.params.student_id);
+  let id = req.params.student_id;
+  Student.remove(
+    {
+      _id: id,
+    },
+    function (err) {
+      if (err) res.send(err);
+      else res.send("Successfull! Student has been Deleted.");
+    }
+  );
+});
