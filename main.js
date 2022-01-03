@@ -80,6 +80,6 @@ app.put("/api/students/:student_id", function (req, res) {
   Student.findByIdAndUpdate(id, data, function (err, student) {
     if (err) throw err;
 
-    res.send("Successfully! Employee updated - " + student.name);
+    res.send("Successfully! Student updated - " + student.name);
   });
 });
